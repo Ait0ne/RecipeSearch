@@ -1,0 +1,29 @@
+version: '3.8'
+
+services: 
+    # Backend
+    recipe-search-server:
+        container_name: backend
+        build: ./
+        command: npm run server
+        working_dir: /recipeSearchServer
+        environment:
+            POSTGRES_URI: postgres://aitone:fibonachi@postgres:5432/recipeSearch
+        depends_on:
+            - postgres
+        ports:
+            - "5000:5000"
+        volumes:
+            - .:/recipeSearchServer:consistent
+    
+    # Postgres
+    postgres:
+        image: postgres
+        restart: always
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_USER: aitone
+            POSTGRES_PASSWORD: fibonachi
+            POSTGRES_DB: recipeSearch
+            HOST: postgres

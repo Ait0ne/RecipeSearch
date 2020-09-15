@@ -1,0 +1,143 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:500px;
+}
+
+.main-form-container {
+    width: 500px;
+    height:320px;
+    background-color: white;
+    text-align: center;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 280px;
+
+}
+
+.title-text {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    line-height: 65px;
+    margin:0;
+    text-decoration: underline;
+
+}
+.search-form-title {
+    color: white;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.detailed-search-button {
+    color:#abbf03;
+    font-size: 12px;
+    align-self: flex-end;
+    margin-right: 10px;
+    text-decoration: underline;
+    cursor:pointer;
+    justify-self: flex-end;
+}
+.search-button:focus {
+    outline: none !important
+}
+
+.pre-title-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.search-field-container {
+    width: 90%;
+    position: relative;
+    top:-36px;
+    background-color: #181818;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    border-radius: 5px;
+    padding-bottom: 5px;
+
+}
+
+.search-button {
+    margin-left: 15px;
+    width: 25%;
+    padding: 5px;
+    background-color: #abbf03;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-field-container form {
+    width: 100%;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-field-container form input {
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 5px;
+
+}
+
+.search-field-container form input:focus {
+    outline: none;
+
+}
+
+.search-field-container .form-control {
+    width: 100%;
+}
+
+.rbt {
+    width: 70%;
+}
+
+.title-search-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.detail-search-container {
+    margin-top: 10px;
+    font-style: italic;
+    transform-origin: 0% 0%;
+    
+}
+
+.detail-search-container .rbt {
+    margin-left: 5px;
+    width:95%
+}
+.MuiTypography-body1 {
+    color:white;
+    line-height: 1 !important;
+    font-size: 12px !important;
+}
+.MuiFormGroup-root label {
+    margin-bottom: 0;
+
+}
+
+.MuiFormGroup-root {
+    margin: 10px 0 0 10px;
+    color: white;
+}
+
+.PrivateSwitchBase-root-3 {
+    padding:2px !important;
+}

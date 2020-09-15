@@ -1,0 +1,52 @@
+.recipe-card {
+    width: 240px;
+    background-color: rgb(248, 246, 246);
+    height:360px;
+    margin: 20px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.2),
+    -3px -3px 6px rgba(255,255,255, 0.5);
+    border-radius: 5px;
+    cursor: default;
+    transition-duration: 0.5s;
+}
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2),
+    -5px -5px 8px rgba(255,255,255, 0.5);
+}
+.card-image-container {
+    height: 200px;
+    width: 100%;
+}
+.card-image {
+    height:100%;
+    width: 100%;
+    cursor: pointer;
+}
+.card-body {
+    height: 160px;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+}
+.card-title {
+    font-family: 'Comfortaa';
+   font-weight: 400;
+   margin-top: 2px;
+   padding-bottom: 5px;
+   border-bottom: 1px solid grey;
+   margin-bottom: 0;
+}
+.ingredients {
+    margin-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ingredients-title {
+    font-style: normal;
+    color: darkblue;
+    text-decoration: underline;
+}

@@ -1,0 +1,116 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_hot_loader_root__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-hot-loader/root */ "./node_modules/react-hot-loader/root.js");
+/* harmony import */ var react_hot_loader_root__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var resium__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! resium */ "./node_modules/resium/dist/resium.es.js");
+/* harmony import */ var cesium__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! cesium */ "cesium");
+/* harmony import */ var cesium__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(cesium__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "C:\\Users\\bonaf\\Desktop\\Projects\\travellog\\src\\App.js";
+
+(function () {
+  var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
+  enterModule && enterModule(module);
+})();
+
+var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default.signature : function (a) {
+  return a;
+};
+
+
+
+
+
+
+var MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiYWl0MG5lIiwiYSI6ImNrYzRteTkweTA5aWIzM21nMndzbzYwNTQifQ.1Wn-afss94YAfckuj6uCBA';
+var PUBLIC_TOKEN = 'pk.eyJ1IjoiZGVlcGZyaWVkZmlsdGgiLCJhIjoiY2puZTN0dGN4MDdxbDNrbXk4eWNyZTh2ZyJ9.liPCD5Y2L6Fp7JDSIxGviA';
+var MAPBOX_STYLE_ID = 'cjne4z5v3273v2sqengsaqyn8';
+var MAPBOX_USERNAME = 'ait0ne';
+var defaultMap = 'https://api.mapbox.com/styles/v1/' + MAPBOX_USERNAME + '/' + MAPBOX_STYLE_ID + '/tiles/256/{z}/{x}/{y}?access_token=' + MAPBOX_ACCESS_TOKEN;
+const mapbox = new cesium__WEBPACK_IMPORTED_MODULE_4__["MapboxStyleImageryProvider"]({
+  styleId: 'light-v10',
+  accessToken: PUBLIC_TOKEN
+});
+
+const App = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      maxHeight: '90%'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(resium__WEBPACK_IMPORTED_MODULE_3__["Viewer"], {
+    containerProps: {
+      maxHeight: 500
+    },
+    imageryProvider: mapbox,
+    baseLayerPicker: false,
+    skyBox: false,
+    homeButton: false,
+    navigationHelpButton: false,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 9
+    }
+  })));
+};
+
+const _default = Object(react_hot_loader_root__WEBPACK_IMPORTED_MODULE_2__["hot"])(App);
+
+/* harmony default export */ __webpack_exports__["default"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default : undefined;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(MAPBOX_ACCESS_TOKEN, "MAPBOX_ACCESS_TOKEN", "C:\\Users\\bonaf\\Desktop\\Projects\\travellog\\src\\App.js");
+  reactHotLoader.register(PUBLIC_TOKEN, "PUBLIC_TOKEN", "C:\\Users\\bonaf\\Desktop\\Projects\\travellog\\src\\App.js");
+  reactHotLoader.register(MAPBOX_STYLE_ID, "MAPBOX_STYLE_ID", "C:\\Users\\bonaf\\Desktop\\Projects\\travellog\\src\\App.js");
+  reactHotLoader.register(MAPBOX_USERNAME, "MAPBOX_USERNAME", "C:\\Users\\bonaf\\Desktop\\Projects\\travellog\\src\\App.js");
+  reactHotLoader.register(defaultMap, "defaultMap", "C:\\Users\\bonaf\\Desktop\\Projects\\travellog\\src\\App.js");
+  reactHotLoader.register(mapbox, "mapbox", "C:\\Users\\bonaf\\Desktop\\Projects\\travellog\\src\\App.js");
+  reactHotLoader.register(App, "App", "C:\\Users\\bonaf\\Desktop\\Projects\\travellog\\src\\App.js");
+  reactHotLoader.register(_default, "default", "C:\\Users\\bonaf\\Desktop\\Projects\\travellog\\src\\App.js");
+})();
+
+;
+
+(function () {
+  var leaveModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.leaveModule : undefined;
+  leaveModule && leaveModule(module);
+})();
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ })
+
+})
+//# sourceMappingURL=main.ebd4a1473fc4134d0543.hot-update.js.map
