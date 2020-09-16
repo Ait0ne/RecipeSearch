@@ -1,0 +1,4 @@
+FROM postgres
+COPY ./db ./db
+ADD ./db/sourcedb.sql /docker-entrypoint-initdb.d
+WORKDIR /recipeSearchServer/db
