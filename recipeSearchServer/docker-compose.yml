@@ -5,7 +5,7 @@ services:
     recipe-search-server:
         container_name: backend
         build: ./
-        command: npm run server
+        command: npm start
         working_dir: /recipeSearchServer
         environment:
             POSTGRES_URI: postgres://aitone:fibonachi@postgres:5432/recipeSearch

@@ -4,7 +4,7 @@ const cors = require('cors');
 const knex = require('knex');
 const _ = require('underscore');
 const morgan = require('morgan') 
-
+const path = require('path');
 
 // const db = knex({
 //     client: 'pg', 
@@ -17,7 +17,7 @@ const morgan = require('morgan')
 // })
 const db = knex({
     client: 'pg', 
-    connection: process.env.POSTGRES_URI
+    connection: process.env.DATABASE_URL
 })
 
 
@@ -30,6 +30,13 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+if (process.env.NODE_ENV==='production') {
+    app.use(express.static(path.join(__dirname, 'recipesearch/build')));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, 'recipesearch/build', 'index.html'))
+    })
+}
 
 app.post('/db', (req, res) => {
     const {titleSearch, ingredientSearch, searchType, perPage, currentPage, initialQuery} = req.body

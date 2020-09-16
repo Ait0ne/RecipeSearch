@@ -13,12 +13,10 @@
 /recipesearch//build
 
 # misc
-/recipesearch/.env
+/recipeSearchServer/recipesearch/.env
 /Scraper/.env
 /Scraper/env
-/recipesearch/Dockerfile
-/recipeSearchServer/Dockerfile
-/recipeSearchServer/docker-compose
+/recipeSearchServer/recipesearch/Dockerfile
 
 
 .DS_Store
